@@ -14,10 +14,13 @@
 		E25624F52491AAC200DBFCB4 /* Jumia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E25624F32491AAC200DBFCB4 /* Jumia.xcdatamodeld */; };
 		E25624F72491AAC700DBFCB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E25624F62491AAC700DBFCB4 /* Assets.xcassets */; };
 		E25624FA2491AAC700DBFCB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25624F82491AAC700DBFCB4 /* LaunchScreen.storyboard */; };
+		E25625022491B30D00DBFCB4 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25625012491B30D00DBFCB4 /* TableViewCell.swift */; };
+		E25625042491B32B00DBFCB4 /* AddStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25625032491B32B00DBFCB4 /* AddStore.swift */; };
+		E25625062491B34500DBFCB4 /* AddItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25625052491B34500DBFCB4 /* AddItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E25624E72491AAC200DBFCB4 /* Jumia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jumia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E25624E72491AAC200DBFCB4 /* SaraStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaraStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E25624EA2491AAC200DBFCB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E25624EC2491AAC200DBFCB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E25624EE2491AAC200DBFCB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +29,9 @@
 		E25624F62491AAC700DBFCB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E25624F92491AAC700DBFCB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E25624FB2491AAC700DBFCB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E25625012491B30D00DBFCB4 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		E25625032491B32B00DBFCB4 /* AddStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStore.swift; sourceTree = "<group>"; };
+		E25625052491B34500DBFCB4 /* AddItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +56,7 @@
 		E25624E82491AAC200DBFCB4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E25624E72491AAC200DBFCB4 /* Jumia.app */,
+				E25624E72491AAC200DBFCB4 /* SaraStore.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,9 +64,9 @@
 		E25624E92491AAC200DBFCB4 /* Jumia */ = {
 			isa = PBXGroup;
 			children = (
+				E256257C2496E6FE00DBFCB4 /* Controlleur */,
 				E25624EA2491AAC200DBFCB4 /* AppDelegate.swift */,
 				E25624EC2491AAC200DBFCB4 /* SceneDelegate.swift */,
-				E25624EE2491AAC200DBFCB4 /* ViewController.swift */,
 				E25624F02491AAC200DBFCB4 /* Main.storyboard */,
 				E25624F62491AAC700DBFCB4 /* Assets.xcassets */,
 				E25624F82491AAC700DBFCB4 /* LaunchScreen.storyboard */,
@@ -68,6 +74,17 @@
 				E25624F32491AAC200DBFCB4 /* Jumia.xcdatamodeld */,
 			);
 			path = Jumia;
+			sourceTree = "<group>";
+		};
+		E256257C2496E6FE00DBFCB4 /* Controlleur */ = {
+			isa = PBXGroup;
+			children = (
+				E25625032491B32B00DBFCB4 /* AddStore.swift */,
+				E25625052491B34500DBFCB4 /* AddItem.swift */,
+				E25625012491B30D00DBFCB4 /* TableViewCell.swift */,
+				E25624EE2491AAC200DBFCB4 /* ViewController.swift */,
+			);
+			path = Controlleur;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,7 +104,7 @@
 			);
 			name = Jumia;
 			productName = Jumia;
-			productReference = E25624E72491AAC200DBFCB4 /* Jumia.app */;
+			productReference = E25624E72491AAC200DBFCB4 /* SaraStore.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -141,10 +158,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E25625022491B30D00DBFCB4 /* TableViewCell.swift in Sources */,
 				E25624F52491AAC200DBFCB4 /* Jumia.xcdatamodeld in Sources */,
 				E25624EF2491AAC200DBFCB4 /* ViewController.swift in Sources */,
 				E25624EB2491AAC200DBFCB4 /* AppDelegate.swift in Sources */,
+				E25625062491B34500DBFCB4 /* AddItem.swift in Sources */,
 				E25624ED2491AAC200DBFCB4 /* SceneDelegate.swift in Sources */,
+				E25625042491B32B00DBFCB4 /* AddStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +315,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ma.ac.boubeh.Jumia;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SaraStore;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -312,7 +332,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ma.ac.boubeh.Jumia;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SaraStore;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
